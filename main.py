@@ -8,7 +8,7 @@ from dreamer    import Dreamer
 from utils      import loadConfig, seedEverything, plotMetrics
 from envs       import getEnvProperties, GymPixelsProcessingWrapper, CleanGymWrapper
 from utils      import saveLossesToCSV, ensureParentFolders
-ale_py.register_v5_envs()
+gym.register_v5_envs()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
